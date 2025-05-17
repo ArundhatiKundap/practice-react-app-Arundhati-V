@@ -22,13 +22,15 @@ let profileData = [
 return (
 
     <div>
-        {profileData.map((profile, index) => (
-            <ProfileCard
-                key={index}
-                name={profile.name}
-                age={profile.age}
-                bio={profile.bio}
-            />
+        <h1>User Profiles</h1>
+        {profileData.map((profile,index) => (
+           <ProfileCard
+             key={index}  
+             id ={index}
+            name={profile.name}
+            age={profile.age}
+            bio={profile.bio}
+  />
         ))}
     </div>
 );

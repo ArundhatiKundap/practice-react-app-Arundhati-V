@@ -1,15 +1,16 @@
+ export default function ProfileCard(props) {
+   
+const {id,name,age,bio} = props
 
-    export default function ProfileCard(props) {
-
-        const { index, name, age, bio } = props;
-
-        return (
-            <div>
-                <ul>
-                    <li key={index}>{name} </li>
-                    <li key={index}>{age} </li>
-                    <li key={index}>{bio} </li>
-                </ul>
-            </div>
-        )
-    }
+return (
+ <div className="profile_card">
+  
+  <div className="container" id ={id} >
+   
+    <h4>Name: {name}</h4> 
+    <p>Age : {age}</p>
+    <p>Bio : {bio}</p>
+  </div>
+</div>
+  );
+}
